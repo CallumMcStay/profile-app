@@ -15,4 +15,5 @@ RUN npm ci --omit=dev
 COPY ./app .
 EXPOSE 3000
 
+ENTRYPOINT ["./entrypoint.sh"]
 CMD ["node", "server.js"]
